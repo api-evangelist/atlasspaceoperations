@@ -1,23 +1,51 @@
 aid: atlasspaceoperations
+
 name: Atlasspaceoperations
-description: 'Atlasspaceoperations is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Atlasspaceoperations is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling. The company is currently represented only as a placeholder within the API Evangelist ecosystem, awaiting further discovery and verification of its actual services, domain, and API offerings. This entry serves as a starting point for future enrichment as more information becomes available through subsequent profiling steps.'
+
 url: https://raw.githubusercontent.com/api-evangelist/atlasspaceoperations/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-26 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-26'
+
 modified: '2026-09-26'
+
 tags:
 - Company
-apis: []
+- Space
+- Operations
+- Technology
+- Services
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/atlasspaceoperations-hosts.yml
+- type: Vendors
+  url: vendors/atlasspaceoperations-vendors.yml
+- type: DomainSecurity
+  url: security/atlasspaceoperations-domain-security.yml
 - type: Website
   url: https://equityzen.com/company/atlasspaceoperations
+
+apis: []
+x-enrichment:
+  date: '2026-09-26'
+  status: enriched
+  artifacts_added: 3
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
